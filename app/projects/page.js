@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <Frame>
       <div className="h-auto w-[60%] md:w-auto flex justify-center gap-4 items-center md:flex-col ">
-        <CustomDiv className="p-5" index={0}>
+        <CustomDiv className="p-5">
           <h1 className="text-3xl mb-1 font-bold flex justify-center ">
             DigiGuard
           </h1>
@@ -54,7 +54,7 @@ const Projects = () => {
             pass generation functionality.
           </div>
         </CustomDiv>
-        <CustomDiv className="p-5" index={1}>
+        <CustomDiv className="p-5">
           <h1 className="text-3xl font-bold flex justify-center">RoboGuide</h1>
           <div className="text-xl p-4 md:p-1 md:text-lg mt-10 md:mt-1">
             <h1 className="text-gray-200">
