@@ -42,7 +42,7 @@ const Hero = () => {
               I design and develop simple yet beautiful websites
             </p>
           </div>
-          <Image src={prof} />
+          <Image src={prof} alt="profile" />
         </motion.div>
       </motion.div>
     </Frame>

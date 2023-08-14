@@ -47,7 +47,7 @@ const About = () => {
                 </div>
               </motion.div>
             </motion.div>
-            <Image src={Boy} className="md:hidden" />
+            <Image src={Boy} className="md:hidden" alt="Boy" />
           </motion.div>
         </Frame>
       </motion.div>

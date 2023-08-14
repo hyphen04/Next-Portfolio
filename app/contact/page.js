@@ -8,6 +8,9 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+
+  let currentDate = new Date().toJSON().slice(0, 10);
+
   const handleChangeName = () => {
     let name = document.getElementById("name").value;
     setName(name);
@@ -39,7 +42,7 @@ const Contact = () => {
           delay: 0.3,
         }}
       >
-        <motion.div className="h-[100%] w-[70%] md:w-[80%] md:mb-10 rounded-lg border-2 border-white hover:border-teal-400 hover:scale-105 transition-all duration-500">
+        <motion.div className="h-[100%] w-[65%] md:w-[80%] md:mb-10 rounded-lg border-2 border-white hover:border-teal-400 hover:scale-105 transition-all duration-500">
           <motion.div
             className="h-full w-full flex md:flex-col justify-between"
             initial={{ opacity: 0 }}
@@ -95,81 +98,84 @@ const Contact = () => {
                   <div className="p-2 space-y-2 text-white">
                     <div className="text-gray-400 p-5 md:text-sm text-lg">
                       /* Send Message */
-                      <div class="snippet">
+                      <div className="snippet">
                         <p>
-                          <span class="pink">const </span>
-                          <span class="green">button </span>
-                          <span class="white">= </span>
-                          <span class="blue">
-                            document<span class="white">.</span>querySelector
+                          <span className="pink">const </span>
+                          <span className="green">button </span>
+                          <span className="white">= </span>
+                          <span className="blue">
+                            document<span className="white">.</span>
+                            querySelector
                           </span>
-                          <span class="pink">(</span>
-                          <span class="saffron">"#sendBtn"</span>
-                          <span class="pink">)</span>
-                          <span class="white">;</span>
+                          <span className="pink">(</span>
+                          <span className="saffron">"#sendBtn"</span>
+                          <span className="pink">)</span>
+                          <span className="white">;</span>
                         </p>
                         <p>&nbsp;</p>
                         <p>
-                          <span class="pink">const </span>
-                          <span class="green">message </span>
-                          <span class="white">= </span>
-                          <span class="blue">&#123;</span>
+                          <span className="pink">const </span>
+                          <span className="green">message </span>
+                          <span className="white">= </span>
+                          <span className="blue">&#123;</span>
                         </p>
                         <p>
                           &nbsp;
-                          <span class="green">name </span>
-                          <span class="white">: </span>
-                          <span class="saffron">{'"' + name + '"'}</span>
-                          <span class="white">,</span>
+                          <span className="green">name </span>
+                          <span className="white">: </span>
+                          <span className="saffron">{'"' + name + '"'}</span>
+                          <span className="white">,</span>
                         </p>
                         <p>
                           &nbsp;
-                          <span class="green">email </span>
-                          <span class="white">: </span>
-                          <span class="saffron">{'"' + email + '"'}</span>
-                          <span class="white">,</span>
+                          <span className="green">email </span>
+                          <span className="white">: </span>
+                          <span className="saffron">{'"' + email + '"'}</span>
+                          <span className="white">,</span>
                         </p>
                         <p>
                           &nbsp;
-                          <span class="green">message </span>
-                          <span class="white">: </span>
-                          <span class="saffron">{'"' + msg + '"'}</span>
-                          <span class="white">,</span>
+                          <span className="green">message </span>
+                          <span className="white">: </span>
+                          <span className="saffron">{'"' + msg + '"'}</span>
+                          <span className="white">,</span>
                         </p>
                         <p>
                           &nbsp;
-                          <span class="green">date </span>
-                          <span class="white">: </span>
-                          <span class="saffron">"Sun 13 Aug"</span>
+                          <span className="green">date </span>
+                          <span className="white">: </span>
+                          <span className="saffron">
+                            {'"' + currentDate + '"'}
+                          </span>
                         </p>
                         <p>
-                          <span class="blue">&#125;</span>
+                          <span className="blue">&#125;</span>
                         </p>
                         <p>&nbsp;</p>
                         <p>
-                          <span class="green">button</span>
-                          <span class="white">.</span>
-                          <span class="blue">addEventListener</span>
-                          <span class="pink">(</span>
-                          <span class="saffron">"click"</span>
-                          <span class="white">, </span>
-                          <span class="blue">() </span>
-                          <span class="white">=&gt; </span>
-                          <span class="green">&#123; </span>
+                          <span className="green">button</span>
+                          <span className="white">.</span>
+                          <span className="blue">addEventListener</span>
+                          <span className="pink">(</span>
+                          <span className="saffron">"click"</span>
+                          <span className="white">, </span>
+                          <span className="blue">() </span>
+                          <span className="white">=&gt; </span>
+                          <span className="green">&#123; </span>
                         </p>
                         <p>
-                          &nbsp;<span class="blue">form</span>
-                          <span class="white">.</span>
-                          <span class="yellow">send</span>
-                          <span class="pink">(</span>
-                          <span class="green">message</span>
-                          <span class="pink">)</span>
-                          <span class="white">;</span>
+                          &nbsp;<span className="blue">form</span>
+                          <span className="white">.</span>
+                          <span className="yellow">send</span>
+                          <span className="pink">(</span>
+                          <span className="green">message</span>
+                          <span className="pink">)</span>
+                          <span className="white">;</span>
                         </p>
                         <p>
-                          <span class="green">&#125;</span>
-                          <span class="pink">)</span>
-                          <span class="white">;</span>
+                          <span className="green">&#125;</span>
+                          <span className="pink">)</span>
+                          <span className="white">;</span>
                         </p>
                       </div>
                     </div>
