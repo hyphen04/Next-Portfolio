@@ -7,7 +7,7 @@ const Projects = () => {
   const CustomDiv = ({ children, className }) => {
     return (
       <motion.div
-        className={`w-[50vh] md:w-[30vh] rounded-lg border-2 border-white hover:border-teal-400 hover:scale-105 transition-all duration-500 m-4 ${className}`}
+        className={`w-[50vh] h-auto max-h-[50vh] md:max-h-[30vh] md:w-[30vh] rounded-lg border-2 border-white hover:border-teal-400 hover:scale-105 transition-all duration-500 m-4 ${className}`}
         initial={{
           width: "0px",
           opacity: 0,
